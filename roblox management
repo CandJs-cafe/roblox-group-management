@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Group Management</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .member-list { margin: 20px 0; }
+        .member { padding: 10px; border-bottom: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Roblox Group Members</h1>
+    <div id="members" class="member-list"></div>
+    <script>
+        const members = ['Member1', 'Member2', 'Member3']; // Replace with actual member data
+
+        const memberList = document.getElementById('members');
+        members.forEach(member => {
+            const memberDiv = document.createElement('div');
+            memberDiv.className = 'member';
+            memberDiv.textContent = member;
+            memberList.appendChild(memberDiv);
+        });
+    </script>
+</body>
+</html>
